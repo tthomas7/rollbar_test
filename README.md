@@ -1,24 +1,37 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A rails configuration to test rollbar issue #594.
 
-Things you may want to cover:
+It's a react app written in typescript with a button that throws an exception.
+I'm hoping the exception will show the function where the exception is thrown
+rather than the rollbar library.
 
-* Ruby version
+There isn't a lot of code here but there is a lot of configuration.
+Rollbar,
+Webpacker,
+Babel,
+Typescript,
+React,
 
-* System dependencies
+To run it:
 
-* Configuration
+ruby version 2.5.0
+node version 9.10.1
 
-* Database creation
+./bin/yarn should install javascript dependencies
+bundle install should install ruby dependencies
 
-* Database initialization
+rails server
 
-* How to run the test suite
+For deploying onto heroku
 
-* Services (job queues, cache servers, search engines, etc.)
+heroku labs:enable runtime-dyno-metadata
 
-* Deployment instructions
+Need environment variables for
+ROLLBAR_CLIENT_TOKEN
 
-* ...
+After deployment the following two commands should push sourcemaps to rollbar.
+
+heroku run bash
+./rollbar-deploy
+

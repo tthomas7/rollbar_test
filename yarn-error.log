@@ -1,0 +1,101 @@
+Arguments: 
+  /usr/local/Cellar/node/9.9.0/bin/node /usr/local/bin/yarnpkg
+
+PATH: 
+  /Users/thomasthomas/.rvm/gems/ruby-2.5.0@rollbar_test/bin:/Users/thomasthomas/.rvm/gems/ruby-2.5.0@global/bin:/Users/thomasthomas/.rvm/rubies/ruby-2.5.0/bin:/Users/thomasthomas/.rvm/bin:/Users/thomasthomas/rollbar_test/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/usr/local/heroku/bin:/Users/thomasthomas/Dropbox/dotfiles/bin:/usr/local/sbin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.9.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "checkercruncher",
+    "description": "Rediscover the joy of checkers.",
+    "version": "1.0.0",
+    "dependencies": {
+      "@rails/webpacker": "3.4",
+      "@types/braintree-web": "^3.6.3",
+      "@types/howler": "^2.0.5",
+      "@types/jquery": "^3.3.1",
+      "@types/jqueryui": "^1.12.1",
+      "@types/lodash": "^4.14.106",
+      "@types/modernizr": "^3.5.2",
+      "@types/prop-types": "^15.5.2",
+      "@types/react": "^16.3.2",
+      "@types/react-dnd": "^2.0.36",
+      "@types/react-dnd-html5-backend": "^2.1.9",
+      "@types/react-dnd-touch-backend": "^0.3.3",
+      "@types/react-dom": "^16.0.4",
+      "@types/react-dom-factories": "^1.0.1",
+      "@types/react-redux": "^5.0.15",
+      "babel-polyfill": "^6.26.0",
+      "braintree-web": "^3.31.0",
+      "browsernizr": "2.2.0",
+      "coffeeify": "3.0.1",
+      "coffeescript": "2.2.4",
+      "create-react-class": "15.6.3",
+      "envify": "4.1.0",
+      "howler": "2.0.9",
+      "jquery": "^3.3.1",
+      "lodash": "^4.17.5",
+      "modernizr": "3.6.0",
+      "node": "^9.10.1",
+      "prop-types": "^15.6.1",
+      "react": "16.3.0",
+      "react-dnd": "2.6.0",
+      "react-dnd-html5-backend": "2.6.0",
+      "react-dnd-touch-backend": "0.3.21",
+      "react-dom": "16.3.0",
+      "react-dom-factories": "1.0.2",
+      "react-redux": "5.0.7",
+      "react-tween-state": "0.1.5",
+      "redux": "3.7.2",
+      "redux-logger": "3.0.6",
+      "redux-thunk": "2.2.0",
+      "ts-loader": "^3.5.0",
+      "typescript": "^2.7.2",
+      "uglifyify": "4.0.5",
+      "webpacker-react": "0.3.2"
+    },
+    "license": "UNLICENSED",
+    "private": "true",
+    "repository": "none",
+    "engines": {
+      "node": "^9.10.1",
+      "yarn": "1.5.1",
+      "npm": "5.8.0"
+    },
+    "devDependencies": {
+      "eslint": "4.19.1",
+      "eslint-config-airbnb": "^16.1.0",
+      "eslint-plugin-import": "^2.10.0",
+      "eslint-plugin-jsx-a11y": "^6.0.3",
+      "eslint-plugin-react": "^7.7.0",
+      "webpack-dev-server": "2.11.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Found incompatible module
+      at new MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
+      at Object.checkOne (/usr/local/lib/node_modules/yarn/lib/cli.js:62444:11)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:22773:75
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:116:14
+      at new Promise (<anonymous>)
+      at new F (/usr/local/lib/node_modules/yarn/lib/cli.js:23451:28)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:95:12
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:22777:27

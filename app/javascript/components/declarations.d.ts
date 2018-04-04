@@ -1,0 +1,2 @@
+
+declare module 'webpacker-react'
