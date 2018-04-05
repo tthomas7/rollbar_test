@@ -14,7 +14,7 @@ class Hello extends React.Component<IHelloProps> {
   printAndThrow(event: React.FormEvent<HTMLInputElement>) {
     event.preventDefault()
     console.log("Throwing an error now!")
-    throw "Hello there!"
+    throw new Error("Hello there!")
   }
 
   render() {

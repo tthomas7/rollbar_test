@@ -27,8 +27,11 @@ For deploying onto heroku
 
 heroku labs:enable runtime-dyno-metadata
 
-Need environment variables for
-ROLLBAR_CLIENT_TOKEN
+Need environment variables: The asset_host is used by the rollbar-deploy
+script. The client token by javascript.
+
+ROLLBAR_CLIENT_TOKEN='some-secret-token'
+ASSET_HOSt='something-something.herokuapp.com'
 
 After deployment the following two commands should push sourcemaps to rollbar.
 
