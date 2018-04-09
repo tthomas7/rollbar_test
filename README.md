@@ -1,40 +1,39 @@
 # README
 
-A rails configuration to test rollbar issue #594.
+A test bed that relatively closely matches my production environment as of
+April, 2018. I use it to share issues I bump into.
+
+Currently used to showcase a syntax error I see with braintree on internet
+explorer.
+
+Originally it was for rollbar.js jssue #594. But I think this was just an awful
+error message so I'm reusing this repo.
 
 It's a react app written in typescript with a button that throws an exception.
-I'm hoping the exception will show the function where the exception is thrown
-rather than the rollbar library.
+It was originally used to test that source maps were working.
 
-There isn't a lot of code here but there is a lot of configuration.
-Rollbar,
-Webpacker,
-Babel,
-Typescript,
-React,
+There isn't a lot of code here but there is some configuration.
+It's a relatively standard, if modern, rails app using the following.
 
-To run it:
+* Webpacker
+* Babel
+* Typescript
+* React
 
-ruby version 2.5.0
-node version 9.10.1
+To run it use ruby version 2.5.0 && node version 9.10.1
 
+```
 ./bin/yarn should install javascript dependencies
 bundle install should install ruby dependencies
+```
 
 rails server
 
-For deploying onto heroku
+To show internet explorer bug I use virtualbox
 
-heroku labs:enable runtime-dyno-metadata
-
-Need environment variables: The asset_host is used by the rollbar-deploy
-script. The client token by javascript.
-
-ROLLBAR_CLIENT_TOKEN='some-secret-token'
-ASSET_HOSt='something-something.herokuapp.com'
-
-After deployment the following two commands should push sourcemaps to rollbar.
-
-heroku run bash
-./rollbar-deploy
+```
+RAILS_ENV=production NODE_ENV=production rails assets:clobber && rails assets:precompile
+SECRET_KEY_BASE="asdfasdf" RAILS_ENV=production NODE_ENV=production rails server -b 0.0.0.0
+```
+Virtual box, windows, IE, 10.0.2.2 (IP address may change).
 

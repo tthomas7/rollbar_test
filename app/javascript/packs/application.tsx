@@ -12,6 +12,8 @@ require("babel-polyfill")
 
 import WebpackerReact from "webpacker-react"
 
+require('../components/braintree')
+
 import Hello from "../components/hello";
 
 WebpackerReact.setup({
